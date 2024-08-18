@@ -132,11 +132,11 @@ function Home() {
   };
 
   return (
-    <Layout title="YT Downloader">
-      <h3 className="h3 text-center p-4 fw-bold">YouTube Downloader</h3>
-      <Card bg="secondary" className="text-white shadow-lg">
+    <Layout title="ABROLOADER">
+      <h3 className="h3 text-center p-4 fw-bold">YOUTUBE DOWNLOADER</h3>
+      <Card bg="secondary" className="text-blue shadow-lg">
         <Card.Header>
-          <Card.Title>Input YouTube video below:</Card.Title>
+          <Card.Title>INPUT YOUR YOUTUBE VIDEO BELOW:</Card.Title>
         </Card.Header>
         <Card.Body>
           <Form onSubmit={handleSubmit}>
@@ -144,7 +144,7 @@ function Home() {
               <InputGroup>
                 <Form.Control
                   type="url"
-                  placeholder="Enter video URL here..."
+                  placeholder="Put in your video URL here..."
                   onChange={(e) => setUrl(e.target.value)}
                 />
                 <Button variant="primary" type="submit">
@@ -179,7 +179,7 @@ function Home() {
                     {result.title}
                   </a>
                 </h4>
-                <p className="text-white">
+                <p className="text-yellow">
                   <span className="fw-bold">{result.author}</span>
                   <br />
                   {FormatTime(parseInt(result.lengthSeconds))}
@@ -265,7 +265,7 @@ function Home() {
               <Alert.Heading>Success!</Alert.Heading>
               <hr />
               <p>
-                Your video has been converted. You can
+               YOUR VIDEO HAS BEEN CONVERTED. YOU CAN
                 <a
                   href={done}
                   target="_blank"
@@ -273,7 +273,7 @@ function Home() {
                   className="text-secondary text-decoration-none"
                 >
                   {" "}
-                  download here
+                  DOWNLOAD HERE
                 </a>
               </p>
               <br />
@@ -282,7 +282,7 @@ function Home() {
                 className="btn btn-primary"
                 onClick={() => router.reload()}
               >
-                Convert another video
+                CONVERT ANOTHER VIDEO
               </a>
             </Alert>
           )}
