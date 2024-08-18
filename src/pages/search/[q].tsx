@@ -44,8 +44,8 @@ function Search() {
   if (isError) return swal.error("An error has occurred", isError.message);
 
   return (
-    <Layout title="YT Downloader - Search">
-      <h3 className="h3 text-center p-4">YouTube Downloader - Search</h3>
+    <Layout title="AbroLoader - SEARCH">
+      <h3 className="h3 text-center p-4">YOUTUBE DOWNLOADER - Search</h3>
 
       {data && <DisplayAllVideos data={data.data} />}
     </Layout>
